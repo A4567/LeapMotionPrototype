@@ -1,0 +1,238 @@
+.old .content {
+  height: 100%;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.old .content #facilities,
+.old .content #paths {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.old .content #facilities {
+  background: blue;
+  color: yellow;
+}
+
+.old .content #paths {
+  background: yellow;
+  color: blue;
+}
+
+.old .content #back {
+  background: lightgrey;
+  border: solid 1px grey;
+  height: 100px;
+  width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: end;
+      align-self: end;
+}
+
+.old body {
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+.old #index {
+  display: none;
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  background: red;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+}
+
+.old #paths-1 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: grey;
+}
+
+.old .cycle-route {
+  padding: 5px;
+  border: 1px solid black;
+  margin: 15px;
+  background: lightgrey;
+}
+
+.old .path-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  overflow: hidden;
+}
+
+body #cursor {
+  height: 20px;
+  width: 20px;
+  background: black;
+  border: solid yellow 1px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  z-index: 100;
+}
+
+body #back {
+  position: absolute;
+  background: red;
+  top: 0;
+  left: 0;
+  height: 10vh;
+  width: 100%;
+  z-index: 99;
+  text-align: center;
+}
+
+body .container {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  height: 90vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: lightblue;
+}
+
+body .container#home-content {
+  top: 0 !important;
+  height: 100vh !important;
+}
+
+body .container#home-content #welcome {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container#home-content #welcome #welcome-text {
+  display: block;
+  width: 80%;
+}
+
+body .container#home-content #welcome h1 {
+  text-align: center;
+}
+
+body .container#home-content #welcome p {
+  padding: 25px;
+}
+
+body .container#home-content .option {
+  width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .container#home-content #facilities {
+  background: chocolate;
+}
+
+body .container#home-content #paths {
+  background: green;
+}
+
+body .container#paths-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .container#paths-content .option {
+  height: 300px;
+  width: 300px;
+  margin: 10px;
+  padding: 15px;
+}
+
+.selected {
+  position: relative;
+}
+
+.selected::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-animation: chosen 2.5s forwards;
+          animation: chosen 2.5s forwards;
+}
+
+.hidden {
+  display: none !important;
+}
+
+@-webkit-keyframes chosen {
+  0% {
+    background: #00000000;
+  }
+  75% {
+    background: #ffff0077;
+  }
+  100% {
+    background: #ffff00;
+  }
+}
+
+@keyframes chosen {
+  0% {
+    background: #00000000;
+  }
+  75% {
+    background: #ffff0077;
+  }
+  100% {
+    background: #ffff00;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="english">
+
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Creative Technology, developer, website, archie, hollyfield">
+    <meta name="author" content="Archie Hollyfield">
+    <meta name="description" content="Archie Hollyfield - Creative Technology services and solutions for web development and installations">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+    <link rel="icon" type="image/ico" href="media/shapecon.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+   
+    <script src="http://js.leapmotion.com/leap-0.6.3.min.js"></script>
+    <script src="https://kit.fontawesome.com/2592a3709e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="main" style="display: none;">
+        <button id="pause" onclick="togglePause()">Pause</button>
+        <input type="checkbox" id="pauseOnGesture" onclick="pauseForGestures()">Pause on gesture</input>
+        <h3>Frame data:</h3>
+        <div id="frameData"></div>
+        <div style="clear:both;"></div>
+        <h3>Hand data:</h3>
+        <div id="handData"></div>
+        <div style="clear:both;"></div>
+        <h3>Finger and tool data:</h3>
+        <div id="pointableData"></div>
+        <div style="clear:both;"></div>
+        <h3>Gesture data:</h3>
+        <div id="gestureData"></div>
+      </div>
+
+    <div class="content" id="content">
+        <div id="facilities">
+            <h2>facilities</h2>
+        </div>
+        <div id="back"><h3>back</h3></div>
+        <div id="paths">
+            <h2>paths</h2>
+        </div>
+    </div>
+
+<div id="cursors">
+<span id="left" style="display: none;"></span>
+<span id="right" style="display: none;"></span>
+
+    </div>
+    <span id="index"></span>
+</body>
+<script src="lm.js"></script>
+<script src="paths.js"></script>
+</html>
